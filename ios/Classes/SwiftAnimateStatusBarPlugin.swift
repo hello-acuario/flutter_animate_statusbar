@@ -35,18 +35,7 @@ public class SwiftAnimateStatusBarPlugin: NSObject, FlutterPlugin {
             var width = arg["width"] as! CGFloat
             var height = arg["height"] as! CGFloat
 
-            if (x == 0) {
-                x = self.statusBar.frame.origin.x
-            }
-            if (y == 0) {
-                y = self.statusBar.frame.origin.y
-            }
-            if (width == 0) {
-                width = self.statusBar.frame.width
-            }
-            if (height == 0) {
-                height = self.statusBar.frame.height
-            }
+        
 
             UIView.animate(withDuration: TimeInterval(duration), animations: {
                 let frame = CGRect(x: x, y: y, width: width, height: height)
