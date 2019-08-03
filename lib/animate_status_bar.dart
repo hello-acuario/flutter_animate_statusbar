@@ -9,6 +9,16 @@ class StatusBarFrame {
   double width;
 
   StatusBarFrame({this.x, this.y, this.height, this.width});
+
+  @override
+  String toString() {
+    return '''==================
+    x: $x
+    y: $y
+    height: $height
+    width: $width
+    ==================''';
+  }
 }
 
 class AnimateStatusBar {
