@@ -25,7 +25,7 @@ class _MyAppState extends State<MyApp> {
               IconButton(
                 icon: Icon(Icons.print),
                 onPressed: () {
-                  AnimateStatusBar.setFrame(x: 0, y: 0, duration: 0.5);
+                  AnimateStatusBar.setFrame(x: 0, y: -50, duration: 0.5);
                 },
               ),
               IconButton(
